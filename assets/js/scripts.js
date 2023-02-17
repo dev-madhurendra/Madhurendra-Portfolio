@@ -32,11 +32,13 @@ var typed = new Typed('.typing', options);
   // <!-- tilt js effect ends -->
 
 setInterval(() => {
-  if(window.scrollY>=400){
+  if(window.scrollY>=400 && window.scrollY<=871){
     // animation-name: comeFromLeft;
     console.log(window.scrollY);
-    document.querySelector('.aboutMe').style.animationName = "comeFromLeft";
-    document.querySelector('.aboutMe').style.animationDuration = "10s";
+    document.querySelector('.myImage').style.animationName = "comeFromLeft";
+    document.querySelector('.myImage').style.animationDuration = "2s";
+    document.querySelector('.about_details').style.animationName = "comeFromLeft";
+    document.querySelector('.about_details').style.animationDuration = "2s";
   }
 }, 1000);
 
