@@ -34,11 +34,17 @@ var typed = new Typed('.typing', options);
 setInterval(() => {
   if(window.scrollY>=400 && window.scrollY<=871){
     // animation-name: comeFromLeft;
-    console.log(window.scrollY);
-    document.querySelector('.myImage').style.animationName = "comeFromLeft";
-    document.querySelector('.myImage').style.animationDuration = "2s";
-    document.querySelector('.about_details').style.animationName = "comeFromLeft";
-    document.querySelector('.about_details').style.animationDuration = "2s";
+    document.querySelector('.aboutMe').style.animationName = "comeFromLeft";
+    document.querySelector('.aboutMe').style.animationDuration = "2s";
+  }
+  if(window.scrollY>=350){
+    if(document.querySelector('.goTotop').classList.contains('hide')){
+      document.querySelector('.goTotop').classList.remove('hide')
+      document.querySelector('.link').classList.remove('hide')
+    }
+  }else{
+    document.querySelector('.goTotop').classList.add('hide')
+    document.querySelector('.link').classList.add('hide')
   }
 }, 1000);
 
@@ -79,4 +85,19 @@ a.forEach(item => {
     cursor.classList.remove('hover');
   });
 })
+
+var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
 

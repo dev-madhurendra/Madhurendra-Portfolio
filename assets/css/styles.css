@@ -463,6 +463,7 @@ header .navbar ul li a:hover {
   justify-content: space-evenly;
   align-items: center;
   text-align: justify;
+  /* background-color: whitesmoke; */
   /* animation-name: comeFromLeft; */
   /* animation-duration: 4s; */
 }
@@ -515,6 +516,7 @@ header .navbar ul li a:hover {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  
 }
 .about-container{
   /* height: 10vh; */
@@ -586,4 +588,35 @@ header .navbar ul li a:hover {
   width: 50px;
   height: 50px;
   opacity: .5;
+}
+
+.skills{
+  width: 100vw;
+  height: 100vh;
+}
+.hide{
+  visibility: hidden;
+}
+.goTotop{
+  background-color: transparent;
+  /* background-color: red; */
+  position: fixed;
+  margin-top: -1450px;
+  margin-left: 1250px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #002057;
+}
+@media screen and (max-width:768px) {
+  .goTotop{
+    position: fixed;
+    margin-top: -1600px;
+    margin-left: 85vw;
+    background-color: whitesmoke;
+  }
 }
