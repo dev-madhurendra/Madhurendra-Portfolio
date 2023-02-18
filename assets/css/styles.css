@@ -767,18 +767,17 @@ header .navbar ul li a:hover {
 
 @media screen and (max-width:900px) {
   .skills_container{
-    width: 100vw;
-    margin: auto;
+    width: 90vw;
+    margin-left: 50px;
     /* background-color: red; */
     display: grid;
-    justify-content: space-evenly;
+    justify-content: center;
     align-content: center;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 20px;
     column-gap: 20px;
   }
   .skill-container{
-    margin-top:60px;
     height: 110vh;
     overflow-y: hidden;
     width: 100vw;
@@ -786,6 +785,9 @@ header .navbar ul li a:hover {
     flex-direction: column;
   } 
   .ball {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 80px;
     width: 80px;
     border-radius: 50%;
@@ -795,8 +797,9 @@ header .navbar ul li a:hover {
   }
   .ball-text{
     font-size: 12px;
+    animation: none;
   }
   .ball span:nth-child(6){
-    filter: blur(0.8px);
+    filter: blur(0px);
   }
 }
