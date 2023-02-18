@@ -755,7 +755,7 @@ header .navbar ul li a:hover {
   font-size: 40px;
   color:#002057;
 }
-.fa-github,.fa-gitlab{
+.ball-text .fa-github,.fa-gitlab{
   font-size: 40px;
   color: #000;
 }
@@ -766,7 +766,7 @@ header .navbar ul li a:hover {
 
 @media screen and (max-width:900px) {
   .skills_container{
-    width: 90vw;
+    width: 100vw;
     margin: auto;
     /* background-color: red; */
     display: grid;
@@ -777,15 +777,16 @@ header .navbar ul li a:hover {
     column-gap: 20px;
   }
   .skill-container{
-    height: 150vh;
+    margin-top:60px;
+    height: 130vh;
     overflow-y: hidden;
     width: 100vw;
     display: flex;
     flex-direction: column;
   } 
   .ball {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
     position: relative;
     box-shadow: inset 0 0 25px rgba(224, 211, 211, 0.25);
