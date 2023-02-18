@@ -32,10 +32,14 @@ var typed = new Typed('.typing', options);
   // <!-- tilt js effect ends -->
 
 setInterval(() => {
-  if(window.scrollY>=400 && window.scrollY<=871){
+  if(window.scrollY>=400){
     // animation-name: comeFromLeft;
     document.querySelector('.aboutMe').style.animationName = "comeFromLeft";
     document.querySelector('.aboutMe').style.animationDuration = "4s";
+  }
+  if(window.scrollY>=800){
+    document.querySelector('.skills_container').style.animationName = "comeFromRight";
+    document.querySelector('.skills_container').style.animationDuration = "2s";
   }
   if(window.scrollY>=350){
     if(document.querySelector('.goTotop').classList.contains('hide')){
