@@ -768,7 +768,7 @@ header .navbar ul li a:hover {
 @media screen and (max-width:900px) {
   .skills_container{
     width: 90vw;
-    margin-left: 50px;
+    margin-left: 40px;
     /* background-color: red; */
     display: grid;
     justify-content: center;
