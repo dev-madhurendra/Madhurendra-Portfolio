@@ -30,6 +30,16 @@ html {
   overflow-x: hidden;
 }
 
+html::-webkit-scrollbar{
+  background-color: transparent;
+  width: 5px;
+}
+html::-webkit-scrollbar-button{
+  background-color: #0e2431;
+}
+html::-webkit-scrollbar-thumb{
+  background-color: darkblue;
+}
 /* navbar starts */
 header {
   position: fixed;
@@ -275,8 +285,8 @@ header .navbar ul li a:hover {
 }
 .home .content p span {
   font-size: 2.5rem;
-  color: blueviolet;
-  font-weight: 600;
+  color: navy;
+  font-weight: 800;
   padding: 1rem 0;
 }
 .buttons{
@@ -619,4 +629,21 @@ header .navbar ul li a:hover {
     margin-left: 85vw;
     background-color: whitesmoke;
   }
+}
+.skill-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.free-skill{
+  width: 100vw;
+  height: 10vh;
+  background-color: white;
+}
+.skills{
+  height: 90vh;
+  font-size:20px;
+  background-color: whitesmoke;
+  text-align: center;
 }

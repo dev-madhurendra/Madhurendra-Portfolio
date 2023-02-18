@@ -35,7 +35,7 @@ setInterval(() => {
   if(window.scrollY>=400 && window.scrollY<=871){
     // animation-name: comeFromLeft;
     document.querySelector('.aboutMe').style.animationName = "comeFromLeft";
-    document.querySelector('.aboutMe').style.animationDuration = "2s";
+    document.querySelector('.aboutMe').style.animationDuration = "4s";
   }
   if(window.scrollY>=350){
     if(document.querySelector('.goTotop').classList.contains('hide')){
@@ -85,19 +85,3 @@ a.forEach(item => {
     cursor.classList.remove('hover');
   });
 })
-
-var btn = $('#button');
-
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
-
-btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, '300');
-});
-
