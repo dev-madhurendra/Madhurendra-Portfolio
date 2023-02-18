@@ -756,7 +756,7 @@ header .navbar ul li a:hover {
   color:#002057;
 }
 .ball-text .fa-github,.fa-gitlab{
-  font-size: 40px;
+  
   color: #000;
 }
 .fa-bootstrap{
@@ -778,7 +778,7 @@ header .navbar ul li a:hover {
   }
   .skill-container{
     margin-top:60px;
-    height: 130vh;
+    height: 100vh;
     overflow-y: hidden;
     width: 100vw;
     display: flex;
