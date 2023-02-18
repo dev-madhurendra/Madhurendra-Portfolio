@@ -723,7 +723,7 @@ header .navbar ul li a:hover {
   justify-content: center;
   align-items: center;
 }
-.ball-text{
+.ball-text i{
   font-size: 40px;
 }
 .fa-html5{
