@@ -723,36 +723,37 @@ header .navbar ul li a:hover {
   justify-content: center;
   align-items: center;
 }
-.fa-html5{
+.ball-text{
   font-size: 40px;
+}
+.fa-html5{
+  
   color: orangered;
 }
 .fa-js{
-  font-size: 40px;
   color: yellow;
 }
 .fa-css3{
-  font-size: 40px;
   color: blue;
 }
 .fa-react{
-  font-size: 40px;
+  
   color: #0fb4ff;
 }
 .fa-node , .fa-node-js{
-  font-size: 40px;
+  
   color: green;
 }
 .fa-java{
-  font-size: 40px;
+  
   color: #ff7b00;
 }
 .fa-python{
-  font-size: 40px;
+  
   color: #ffeb3b;
 }
 .fa-golang{
-  font-size: 40px;
+  
   color:#002057;
 }
 .ball-text .fa-github,.fa-gitlab{
@@ -760,7 +761,7 @@ header .navbar ul li a:hover {
   color: #000;
 }
 .fa-bootstrap{
-  font-size: 40px;
+  
   color: #011aff;
 }
 
@@ -778,7 +779,7 @@ header .navbar ul li a:hover {
   }
   .skill-container{
     margin-top:60px;
-    height: 100vh;
+    height: 110vh;
     overflow-y: hidden;
     width: 100vw;
     display: flex;
