@@ -680,10 +680,9 @@ header .navbar ul li a:hover {
   animation: floating 1s 1s infinite ease-in-out;
 }
 @keyframes floating {
-  from { transform: translate(0,  0px); }
-  25%  { transform: translate(0, 15px); }
-  50% {transform: translate(0, -15px); }
-  to   { transform: translate(0, -0px); }    
+  50%{
+    margin-top: 10px;
+  }
 }
 .ball span{
   position: absolute;
@@ -716,7 +715,6 @@ header .navbar ul li a:hover {
   transform: rotate(330deg);
 }
 .ball span:nth-child(6){
-  filter: blur(1px);
 }
 .ball{
   display: flex;
@@ -768,12 +766,11 @@ header .navbar ul li a:hover {
 @media screen and (max-width:900px) {
   .skills_container{
     width: 90vw;
-    margin-left: 40px;
-    /* background-color: red; */
+    background-color: red;
     display: grid;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4,1fr);
     row-gap: 20px;
     column-gap: 20px;
   }
@@ -784,6 +781,9 @@ header .navbar ul li a:hover {
     display: flex;
     flex-direction: column;
   } 
+  .hide{
+    visibility: visible;
+  }
   .ball {
     display: flex;
     justify-content: center;
@@ -797,9 +797,6 @@ header .navbar ul li a:hover {
   }
   .ball-text{
     font-size: 12px;
-    animation: none;
   }
-  .ball span:nth-child(6){
-    filter: blur(0px);
-  }
+
 }
