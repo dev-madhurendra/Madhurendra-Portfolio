@@ -28,8 +28,7 @@ var typed = new Typed('.typing', options);
 
 // Typing Effect End
 
-// <!-- tilt js effect starts -->
-  // <!-- tilt js effect ends -->
+
 
 setInterval(() => {
   if(window.scrollY>=400){
@@ -506,3 +505,10 @@ new Carousel(
   true,
   true
 );
+
+
+// <!-- tilt js effect starts -->
+VanillaTilt.init(document.querySelectorAll(".tilt"), {
+  max: 15,
+});
+  // <!-- tilt js effect ends -->
